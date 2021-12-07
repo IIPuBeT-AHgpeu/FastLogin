@@ -23,8 +23,6 @@ namespace FastLoginSettings
 
         public Model model = new Model(MY_DOCS_PATH);
 
-        public NotifyIcon notifyIcon;
-
         public FormWindowState OldFormState;
 
         public FastLoginSettingsForm()
@@ -40,8 +38,6 @@ namespace FastLoginSettings
             RegisterHotKey(Handle, ALTI_HOTKEY_ID, 1, (int)Keys.I);
             RegisterHotKey(Handle, ALTO_HOTKEY_ID, 1, (int)Keys.O);
             RegisterHotKey(Handle, ALTP_HOTKEY_ID, 1, (int)Keys.P);
-
-            notifyIconInitialization();
 
             model.loadData(MY_DOCS_PATH);
         }
@@ -120,7 +116,7 @@ namespace FastLoginSettings
 
             if (exitDialog == DialogResult.OK)
             {
-                notifyIcon.Dispose();
+                FastLoginNotify.Dispose();
                 Process.GetCurrentProcess().Kill();
             }
         }
@@ -171,30 +167,6 @@ namespace FastLoginSettings
             base.WndProc(ref m);
         }
 
-        //Инициализирует элемент в трее.
-        private void notifyIconInitialization()
-        {
-            notifyIcon = new NotifyIcon();
-            //path
-            notifyIcon.Icon = new Icon("C:\\VS_Projects\\FastLoginSettings\\FastLoginSettings\\pictures\\FastLogin.ico");
-            notifyIcon.DoubleClick += (snr, args) =>
-            {
-                showWindow();
-            };
-            notifyIcon.Text = "FastLogin";
-            notifyIcon.Visible = false;
-            notifyIcon.ContextMenuStrip = new ContextMenuStrip();
-
-            notifyIcon.ContextMenuStrip.Items.Add("Open", 
-                Image.FromFile("C:\\VS_Projects\\FastLoginSettings\\FastLoginSettings\\pictures\\context-open-icon.png"), 
-                this.showWindowContext);
-
-            notifyIcon.ContextMenuStrip.Items.Add("Exit", 
-                Image.FromFile("C:\\VS_Projects\\FastLoginSettings\\FastLoginSettings\\pictures\\context-exit-icon.png"),
-                this.ExitBtn_Click);
-
-        }
-
         private void showWindowContext(object sender, EventArgs e)
         {
             showWindow();
@@ -205,7 +177,7 @@ namespace FastLoginSettings
         {
             Hide();
             OldFormState = WindowState;
-            notifyIcon.Visible = true;
+            FastLoginNotify.Visible = true;
         }
 
         //Разворачивает окно из трея.
@@ -213,7 +185,7 @@ namespace FastLoginSettings
         {
             Show();
             WindowState = OldFormState;
-            notifyIcon.Visible = false;
+            FastLoginNotify.Visible = false;
         }
 
         //При нажатии на крестик, сворачиваем окно в трей
@@ -277,6 +249,21 @@ namespace FastLoginSettings
         private void FastLoginSettingsForm_Shown(object sender, EventArgs e)
         {
             if (!model.data.FirstStart) hideWindow();
+        }
+
+        private void FastLoginNotify_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            showWindow();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExitBtn_Click(sender, e);
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showWindowContext(sender, e);
         }
     }
 }
