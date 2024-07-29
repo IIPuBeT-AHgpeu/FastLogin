@@ -58,8 +58,8 @@ namespace FastLoginSettings
             this.AcceptBtn = new System.Windows.Forms.Button();
             this.FastLoginNotify = new System.Windows.Forms.NotifyIcon(this.components);
             this.notifyContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.AltPictureFirst)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OBtnPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IBtnPicture)).BeginInit();
@@ -77,9 +77,10 @@ namespace FastLoginSettings
             // AltPictureFirst
             // 
             this.AltPictureFirst.Image = ((System.Drawing.Image)(resources.GetObject("AltPictureFirst.Image")));
-            this.AltPictureFirst.Location = new System.Drawing.Point(6, 10);
+            this.AltPictureFirst.Location = new System.Drawing.Point(4, 8);
+            this.AltPictureFirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AltPictureFirst.Name = "AltPictureFirst";
-            this.AltPictureFirst.Size = new System.Drawing.Size(100, 70);
+            this.AltPictureFirst.Size = new System.Drawing.Size(75, 57);
             this.AltPictureFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AltPictureFirst.TabIndex = 0;
             this.AltPictureFirst.TabStop = false;
@@ -87,9 +88,10 @@ namespace FastLoginSettings
             // OBtnPicture
             // 
             this.OBtnPicture.Image = ((System.Drawing.Image)(resources.GetObject("OBtnPicture.Image")));
-            this.OBtnPicture.Location = new System.Drawing.Point(180, 95);
+            this.OBtnPicture.Location = new System.Drawing.Point(135, 77);
+            this.OBtnPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.OBtnPicture.Name = "OBtnPicture";
-            this.OBtnPicture.Size = new System.Drawing.Size(65, 65);
+            this.OBtnPicture.Size = new System.Drawing.Size(49, 53);
             this.OBtnPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.OBtnPicture.TabIndex = 1;
             this.OBtnPicture.TabStop = false;
@@ -97,9 +99,10 @@ namespace FastLoginSettings
             // IBtnPicture
             // 
             this.IBtnPicture.Image = ((System.Drawing.Image)(resources.GetObject("IBtnPicture.Image")));
-            this.IBtnPicture.Location = new System.Drawing.Point(180, 10);
+            this.IBtnPicture.Location = new System.Drawing.Point(135, 8);
+            this.IBtnPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.IBtnPicture.Name = "IBtnPicture";
-            this.IBtnPicture.Size = new System.Drawing.Size(65, 65);
+            this.IBtnPicture.Size = new System.Drawing.Size(49, 53);
             this.IBtnPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IBtnPicture.TabIndex = 2;
             this.IBtnPicture.TabStop = false;
@@ -107,9 +110,10 @@ namespace FastLoginSettings
             // PBtnPicture
             // 
             this.PBtnPicture.Image = ((System.Drawing.Image)(resources.GetObject("PBtnPicture.Image")));
-            this.PBtnPicture.Location = new System.Drawing.Point(180, 185);
+            this.PBtnPicture.Location = new System.Drawing.Point(135, 150);
+            this.PBtnPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PBtnPicture.Name = "PBtnPicture";
-            this.PBtnPicture.Size = new System.Drawing.Size(65, 65);
+            this.PBtnPicture.Size = new System.Drawing.Size(49, 53);
             this.PBtnPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBtnPicture.TabIndex = 3;
             this.PBtnPicture.TabStop = false;
@@ -117,9 +121,10 @@ namespace FastLoginSettings
             // AltPictureThird
             // 
             this.AltPictureThird.Image = ((System.Drawing.Image)(resources.GetObject("AltPictureThird.Image")));
-            this.AltPictureThird.Location = new System.Drawing.Point(6, 185);
+            this.AltPictureThird.Location = new System.Drawing.Point(4, 150);
+            this.AltPictureThird.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AltPictureThird.Name = "AltPictureThird";
-            this.AltPictureThird.Size = new System.Drawing.Size(100, 70);
+            this.AltPictureThird.Size = new System.Drawing.Size(75, 57);
             this.AltPictureThird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AltPictureThird.TabIndex = 6;
             this.AltPictureThird.TabStop = false;
@@ -127,9 +132,10 @@ namespace FastLoginSettings
             // AltPictureSecond
             // 
             this.AltPictureSecond.Image = ((System.Drawing.Image)(resources.GetObject("AltPictureSecond.Image")));
-            this.AltPictureSecond.Location = new System.Drawing.Point(6, 96);
+            this.AltPictureSecond.Location = new System.Drawing.Point(4, 78);
+            this.AltPictureSecond.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AltPictureSecond.Name = "AltPictureSecond";
-            this.AltPictureSecond.Size = new System.Drawing.Size(100, 70);
+            this.AltPictureSecond.Size = new System.Drawing.Size(75, 57);
             this.AltPictureSecond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AltPictureSecond.TabIndex = 7;
             this.AltPictureSecond.TabStop = false;
@@ -138,9 +144,10 @@ namespace FastLoginSettings
             // 
             this.PlusLabel1.AutoSize = true;
             this.PlusLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlusLabel1.Location = new System.Drawing.Point(112, 12);
+            this.PlusLabel1.Location = new System.Drawing.Point(84, 10);
+            this.PlusLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PlusLabel1.Name = "PlusLabel1";
-            this.PlusLabel1.Size = new System.Drawing.Size(59, 63);
+            this.PlusLabel1.Size = new System.Drawing.Size(47, 51);
             this.PlusLabel1.TabIndex = 8;
             this.PlusLabel1.Text = "+";
             // 
@@ -148,9 +155,10 @@ namespace FastLoginSettings
             // 
             this.PlusLabel3.AutoSize = true;
             this.PlusLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlusLabel3.Location = new System.Drawing.Point(112, 185);
+            this.PlusLabel3.Location = new System.Drawing.Point(84, 150);
+            this.PlusLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PlusLabel3.Name = "PlusLabel3";
-            this.PlusLabel3.Size = new System.Drawing.Size(59, 63);
+            this.PlusLabel3.Size = new System.Drawing.Size(47, 51);
             this.PlusLabel3.TabIndex = 9;
             this.PlusLabel3.Text = "+";
             // 
@@ -158,9 +166,10 @@ namespace FastLoginSettings
             // 
             this.PlusLabel2.AutoSize = true;
             this.PlusLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlusLabel2.Location = new System.Drawing.Point(112, 95);
+            this.PlusLabel2.Location = new System.Drawing.Point(84, 77);
+            this.PlusLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PlusLabel2.Name = "PlusLabel2";
-            this.PlusLabel2.Size = new System.Drawing.Size(59, 63);
+            this.PlusLabel2.Size = new System.Drawing.Size(47, 51);
             this.PlusLabel2.TabIndex = 10;
             this.PlusLabel2.Text = "+";
             // 
@@ -173,36 +182,41 @@ namespace FastLoginSettings
             this.InputGroup.Controls.Add(this.FirstStringSavingLabel);
             this.InputGroup.Controls.Add(this.ThirdStringSavingLabel);
             this.InputGroup.Controls.Add(this.SecondStringSavingLabel);
-            this.InputGroup.Location = new System.Drawing.Point(317, 23);
+            this.InputGroup.Location = new System.Drawing.Point(238, 19);
+            this.InputGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InputGroup.Name = "InputGroup";
-            this.InputGroup.Size = new System.Drawing.Size(465, 253);
+            this.InputGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InputGroup.Size = new System.Drawing.Size(349, 207);
             this.InputGroup.TabIndex = 11;
             this.InputGroup.TabStop = false;
             // 
             // AltPInput
             // 
             this.AltPInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AltPInput.Location = new System.Drawing.Point(216, 202);
+            this.AltPInput.Location = new System.Drawing.Point(162, 164);
+            this.AltPInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AltPInput.Name = "AltPInput";
-            this.AltPInput.Size = new System.Drawing.Size(237, 30);
+            this.AltPInput.Size = new System.Drawing.Size(179, 26);
             this.AltPInput.TabIndex = 6;
             this.AltPInput.TextChanged += new System.EventHandler(this.AltPInput_TextChanged);
             // 
             // AltOInput
             // 
             this.AltOInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AltOInput.Location = new System.Drawing.Point(216, 118);
+            this.AltOInput.Location = new System.Drawing.Point(162, 96);
+            this.AltOInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AltOInput.Name = "AltOInput";
-            this.AltOInput.Size = new System.Drawing.Size(237, 30);
+            this.AltOInput.Size = new System.Drawing.Size(179, 26);
             this.AltOInput.TabIndex = 5;
             this.AltOInput.TextChanged += new System.EventHandler(this.AltOInput_TextChanged);
             // 
             // AltIInput
             // 
             this.AltIInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AltIInput.Location = new System.Drawing.Point(216, 29);
+            this.AltIInput.Location = new System.Drawing.Point(162, 24);
+            this.AltIInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AltIInput.Name = "AltIInput";
-            this.AltIInput.Size = new System.Drawing.Size(237, 30);
+            this.AltIInput.Size = new System.Drawing.Size(179, 26);
             this.AltIInput.TabIndex = 4;
             this.AltIInput.TextChanged += new System.EventHandler(this.AltIInput_TextChanged);
             // 
@@ -210,9 +224,10 @@ namespace FastLoginSettings
             // 
             this.FirstStringSavingLabel.AutoSize = true;
             this.FirstStringSavingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FirstStringSavingLabel.Location = new System.Drawing.Point(4, 31);
+            this.FirstStringSavingLabel.Location = new System.Drawing.Point(3, 25);
+            this.FirstStringSavingLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FirstStringSavingLabel.Name = "FirstStringSavingLabel";
-            this.FirstStringSavingLabel.Size = new System.Drawing.Size(185, 25);
+            this.FirstStringSavingLabel.Size = new System.Drawing.Size(148, 20);
             this.FirstStringSavingLabel.TabIndex = 3;
             this.FirstStringSavingLabel.Text = "Text for Alt+I saving";
             // 
@@ -220,9 +235,10 @@ namespace FastLoginSettings
             // 
             this.ThirdStringSavingLabel.AutoSize = true;
             this.ThirdStringSavingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ThirdStringSavingLabel.Location = new System.Drawing.Point(3, 207);
+            this.ThirdStringSavingLabel.Location = new System.Drawing.Point(2, 168);
+            this.ThirdStringSavingLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ThirdStringSavingLabel.Name = "ThirdStringSavingLabel";
-            this.ThirdStringSavingLabel.Size = new System.Drawing.Size(193, 25);
+            this.ThirdStringSavingLabel.Size = new System.Drawing.Size(153, 20);
             this.ThirdStringSavingLabel.TabIndex = 2;
             this.ThirdStringSavingLabel.Text = "Text for Alt+P saving";
             // 
@@ -230,9 +246,10 @@ namespace FastLoginSettings
             // 
             this.SecondStringSavingLabel.AutoSize = true;
             this.SecondStringSavingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SecondStringSavingLabel.Location = new System.Drawing.Point(3, 123);
+            this.SecondStringSavingLabel.Location = new System.Drawing.Point(2, 100);
+            this.SecondStringSavingLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SecondStringSavingLabel.Name = "SecondStringSavingLabel";
-            this.SecondStringSavingLabel.Size = new System.Drawing.Size(196, 25);
+            this.SecondStringSavingLabel.Size = new System.Drawing.Size(155, 20);
             this.SecondStringSavingLabel.TabIndex = 1;
             this.SecondStringSavingLabel.Text = "Text for Alt+O saving";
             // 
@@ -240,9 +257,11 @@ namespace FastLoginSettings
             // 
             this.StringSavingGroup.AutoSize = true;
             this.StringSavingGroup.Controls.Add(this.groupBox1);
-            this.StringSavingGroup.Location = new System.Drawing.Point(12, 1);
+            this.StringSavingGroup.Location = new System.Drawing.Point(9, 1);
+            this.StringSavingGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StringSavingGroup.Name = "StringSavingGroup";
-            this.StringSavingGroup.Size = new System.Drawing.Size(783, 318);
+            this.StringSavingGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StringSavingGroup.Size = new System.Drawing.Size(587, 258);
             this.StringSavingGroup.TabIndex = 12;
             this.StringSavingGroup.TabStop = false;
             this.StringSavingGroup.Text = "Save your texts for fast copying!";
@@ -259,18 +278,22 @@ namespace FastLoginSettings
             this.groupBox1.Controls.Add(this.PlusLabel3);
             this.groupBox1.Controls.Add(this.PBtnPicture);
             this.groupBox1.Controls.Add(this.AltPictureThird);
-            this.groupBox1.Location = new System.Drawing.Point(18, 21);
+            this.groupBox1.Location = new System.Drawing.Point(14, 17);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(266, 276);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(200, 224);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
             // AutorunCheckBox
             // 
             this.AutorunCheckBox.AutoSize = true;
-            this.AutorunCheckBox.Location = new System.Drawing.Point(11, 30);
+            this.AutorunCheckBox.Enabled = false;
+            this.AutorunCheckBox.Location = new System.Drawing.Point(8, 24);
+            this.AutorunCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutorunCheckBox.Name = "AutorunCheckBox";
-            this.AutorunCheckBox.Size = new System.Drawing.Size(313, 21);
+            this.AutorunCheckBox.Size = new System.Drawing.Size(240, 17);
             this.AutorunCheckBox.TabIndex = 13;
             this.AutorunCheckBox.Text = "Application will be running with your Windows";
             this.AutorunCheckBox.UseVisualStyleBackColor = true;
@@ -280,9 +303,11 @@ namespace FastLoginSettings
             // 
             this.SettingsGroup.AutoSize = true;
             this.SettingsGroup.Controls.Add(this.AutorunCheckBox);
-            this.SettingsGroup.Location = new System.Drawing.Point(12, 295);
+            this.SettingsGroup.Location = new System.Drawing.Point(9, 240);
+            this.SettingsGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsGroup.Name = "SettingsGroup";
-            this.SettingsGroup.Size = new System.Drawing.Size(352, 163);
+            this.SettingsGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SettingsGroup.Size = new System.Drawing.Size(264, 132);
             this.SettingsGroup.TabIndex = 14;
             this.SettingsGroup.TabStop = false;
             this.SettingsGroup.Text = "Settings";
@@ -294,17 +319,20 @@ namespace FastLoginSettings
             this.ButtonGroup.Controls.Add(this.HideBtn);
             this.ButtonGroup.Controls.Add(this.CancelBtn);
             this.ButtonGroup.Controls.Add(this.AcceptBtn);
-            this.ButtonGroup.Location = new System.Drawing.Point(362, 295);
+            this.ButtonGroup.Location = new System.Drawing.Point(272, 240);
+            this.ButtonGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonGroup.Name = "ButtonGroup";
-            this.ButtonGroup.Size = new System.Drawing.Size(433, 163);
+            this.ButtonGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonGroup.Size = new System.Drawing.Size(325, 133);
             this.ButtonGroup.TabIndex = 15;
             this.ButtonGroup.TabStop = false;
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Location = new System.Drawing.Point(61, 92);
+            this.ExitBtn.Location = new System.Drawing.Point(46, 75);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(150, 50);
+            this.ExitBtn.Size = new System.Drawing.Size(112, 41);
             this.ExitBtn.TabIndex = 6;
             this.ExitBtn.Text = "Exit FastLogin";
             this.ExitBtn.UseVisualStyleBackColor = true;
@@ -312,9 +340,10 @@ namespace FastLoginSettings
             // 
             // HideBtn
             // 
-            this.HideBtn.Location = new System.Drawing.Point(251, 92);
+            this.HideBtn.Location = new System.Drawing.Point(188, 75);
+            this.HideBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HideBtn.Name = "HideBtn";
-            this.HideBtn.Size = new System.Drawing.Size(150, 50);
+            this.HideBtn.Size = new System.Drawing.Size(112, 41);
             this.HideBtn.TabIndex = 5;
             this.HideBtn.Text = "Hide FastLogin";
             this.HideBtn.UseVisualStyleBackColor = true;
@@ -322,9 +351,10 @@ namespace FastLoginSettings
             // 
             // CancelBtn
             // 
-            this.CancelBtn.Location = new System.Drawing.Point(61, 21);
+            this.CancelBtn.Location = new System.Drawing.Point(46, 17);
+            this.CancelBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(150, 50);
+            this.CancelBtn.Size = new System.Drawing.Size(112, 41);
             this.CancelBtn.TabIndex = 4;
             this.CancelBtn.Text = "Cancel changes";
             this.CancelBtn.UseVisualStyleBackColor = true;
@@ -332,9 +362,10 @@ namespace FastLoginSettings
             // 
             // AcceptBtn
             // 
-            this.AcceptBtn.Location = new System.Drawing.Point(251, 21);
+            this.AcceptBtn.Location = new System.Drawing.Point(188, 17);
+            this.AcceptBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AcceptBtn.Name = "AcceptBtn";
-            this.AcceptBtn.Size = new System.Drawing.Size(150, 50);
+            this.AcceptBtn.Size = new System.Drawing.Size(112, 41);
             this.AcceptBtn.TabIndex = 1;
             this.AcceptBtn.Text = "Accept changes";
             this.AcceptBtn.UseVisualStyleBackColor = true;
@@ -354,39 +385,40 @@ namespace FastLoginSettings
             this.openToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.notifyContextMenuStrip.Name = "contextMenuStrip1";
-            this.notifyContextMenuStrip.Size = new System.Drawing.Size(119, 56);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.notifyContextMenuStrip.Size = new System.Drawing.Size(108, 56);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(107, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // FastLoginSettingsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(823, 478);
+            this.ClientSize = new System.Drawing.Size(619, 395);
             this.Controls.Add(this.ButtonGroup);
             this.Controls.Add(this.SettingsGroup);
             this.Controls.Add(this.InputGroup);
             this.Controls.Add(this.StringSavingGroup);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(841, 525);
-            this.MinimumSize = new System.Drawing.Size(841, 525);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(635, 434);
+            this.MinimumSize = new System.Drawing.Size(635, 434);
             this.Name = "FastLoginSettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FastLoginSettings";

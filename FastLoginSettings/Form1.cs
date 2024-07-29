@@ -95,7 +95,7 @@ namespace FastLoginSettings
         private bool checkInputsAndSettingsChanges()
         {
             if (AltIInput.Text == model.data.FirstString && AltOInput.Text == model.data.SecondString &&
-                AltPInput.Text == model.data.ThirdString && AutorunCheckBox.Checked == model.data.Autorun)
+                AltPInput.Text == model.data.ThirdString/* && AutorunCheckBox.Checked == model.data.Autorun*/)
                 return false;
             else return true;
         }
@@ -126,6 +126,7 @@ namespace FastLoginSettings
             if (!showApplyDialog()) setInputsAndSettings();
             hideWindow();
         }
+
         protected override void WndProc(ref Message m)
         {
             if (m.Msg == 0x0312)
@@ -209,8 +210,8 @@ namespace FastLoginSettings
 
                 if (applyDialog == DialogResult.OK)
                 {
-                    if (!(SetAutorunValue(!model.data.Autorun))) 
-                        throw new Exception("Can not to add/delete the app in autorun");
+                    //if (!(SetAutorunValue(!model.data.Autorun))) 
+                    //    throw new Exception("Can not to add/delete the app in autorun");
                     
                     model.setData(AutorunCheckBox.Checked, AltIInput.Text,
                         AltOInput.Text, AltPInput.Text);
@@ -225,26 +226,26 @@ namespace FastLoginSettings
             return false;
         }
 
-        public bool SetAutorunValue(bool autorun)
-        {
-            string ExePath = Application.ExecutablePath;
-            RegistryKey reg;
-            reg = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run\\");
-            try
-            {
-                if (autorun)
-                    reg.SetValue("FastLogin", ExePath);
-                else
-                    reg.DeleteValue("FastLogin");
+        //public bool SetAutorunValue(bool autorun)
+        //{
+        //    string ExePath = Application.ExecutablePath;
+        //    RegistryKey reg;
+        //    reg = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run\\");
+        //    try
+        //    {
+        //        if (autorun)
+        //            reg.SetValue("FastLogin", ExePath);
+        //        else
+        //            reg.DeleteValue("FastLogin");
 
-                reg.Close();
-            }
-            catch
-            {
-                return false;
-            }
-            return true;
-        }
+        //        reg.Close();
+        //    }
+        //    catch
+        //    {
+        //        return false;
+        //    }
+        //    return true;
+        //}
 
         private void FastLoginSettingsForm_Shown(object sender, EventArgs e)
         {
